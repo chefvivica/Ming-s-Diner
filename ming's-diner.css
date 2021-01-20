@@ -1,0 +1,380 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    font-family: 'Exo 2', sans-serif;
+    text-transform: capitalize;
+    -webkit-transition: all .2s linear;
+    transition: all .2s linear;
+  }
+  
+  html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    overflow-x: hidden;
+  }
+  
+  #header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 2rem 4rem;
+    z-index: 1000;
+  }
+  
+   
+  #header nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    list-style: none;
+  }
+  
+  #header nav ul li {
+    margin-right: 4rem;
+  }
+  
+  #header nav ul li a {
+    color: #99f5de;
+    font-size: 2rem;
+  }
+  
+  #header nav ul li a:hover {
+    color: #FFF200;
+    text-decoration: none;
+  }
+  
+  
+  #bestseller {
+    background: #000;
+    min-height: 100vh;
+  }
+  
+  #bestseller .heading h3 {
+    font-size: 3rem;
+    color: #000;
+    padding-top: 7rem;
+    padding-left: 7rem;
+    margin-bottom: 2rem;
+    color: #fff;
+  }
+  
+  #bestseller .heading h3 span {
+    color: #ff8800;
+  }
+  
+  #bestseller .heading p {
+    color: #ccc;
+    font-size: 2rem;
+    padding-left: 7rem;
+  }
+  
+  #bestseller .card-container {
+    width: 95%;
+    margin: 7rem auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  
+  #bestseller .card-container .card {
+    height: 40rem;
+    width: 30rem;
+    background: #fff;
+    padding: 1rem;
+    margin: 2rem;
+    text-align: center;
+  }
+  
+  #bestseller .card-container .card img {
+    height: 50%;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  
+  #bestseller .card-container .card p {
+    font-size: 1.4rem;
+    margin: 2rem 0;
+  }
+  
+  #bestseller .card-container .card button {
+    outline: none;
+    border: none;
+    border-radius: 5rem;
+    color: #333;
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    letter-spacing: .2rem;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    height: 3.5rem;
+    width: 14rem;
+    background: #333;
+    color: #fff;
+  }
+  
+  #bestseller .card-container .card:hover {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+
+  #about .row{
+    background: rgb(0, 0, 0);
+    padding-top: 2rem;
+    margin: 1rem 2rem;
+    border-radius: 1rem;
+    -webkit-box-shadow: 0 0 2rem #333;
+            box-shadow: 0 0 2rem #333;
+            
+  }
+  #about  .col{
+    position: relative;
+    text-align: center;
+  }
+
+  #about h1{
+      color: #ff8800;
+  }
+
+  #about p{
+      color: aliceblue;
+  }
+
+
+  #contact {
+    min-height: 100vh;
+    width: 100vw;
+  }
+  
+  #contact .heading h1 {
+    font-size: 4rem;
+    color: #000;
+    padding-top: 7rem;
+    margin-bottom: 2rem;
+  }
+  
+  #contact .heading h1 span {
+    color:#ff8800;
+  }
+  
+  #contact form {
+    background: rgb(253, 247, 247);
+    padding-top: 2rem;
+    margin: 1rem 2rem;
+    border-radius: 1rem;
+    -webkit-box-shadow: 0 0 2rem #333;
+            box-shadow: 0 0 2rem #333;
+  }
+  
+  #contact form .inputBox {
+    position: relative;
+    text-align: center;
+  }
+  
+  #contact form .inputBox input, #contact form .inputBox textarea {
+    outline: none;
+    border: .2rem solid #333;
+    border-radius: .2rem;
+    margin: 2rem 0;
+    padding: 0 1rem;
+    background: none;
+    height: 4rem;
+    width: 90%;
+    font-size: 2rem;
+  }
+  
+  #contact form .inputBox input:focus ~ h3,
+  #contact form .inputBox input:valid ~ h3, #contact form .inputBox textarea:focus ~ h3,
+  #contact form .inputBox textarea:valid ~ h3 {
+    font-size: 1.6rem;
+    left: 6%;
+    top: -.5rem;
+    color: #b14c0a;
+  }
+  
+  #contact form .inputBox textarea {
+    padding: 1rem;
+    resize: none;
+    height: 20rem;
+  }
+  
+  #contact form .inputBox h3 {
+    position: absolute;
+    top: 3rem;
+    left: 7%;
+  }
+  
+  #contact form input[type="submit"] {
+    outline: none;
+    border: none;
+    border-radius: 5rem;
+    color: #333;
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    letter-spacing: .2rem;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    height: 4rem;
+    width: 12rem;
+    margin-bottom: 2rem;
+    margin-left: 4%;
+    background: #333;
+    color: #fff;
+  }
+  
+  #contact form input[type="submit"]:hover {
+    color: #333;
+    background:#ff8800;
+  } 
+  
+  #footer {
+    background: #333;
+  }
+  
+  #footer h1 {
+    font-size: 2rem;
+    margin: 0;
+    padding: 2rem 0;
+    text-align: center;
+    color: #fff;
+  }
+  
+  #footer h1 span {
+    color:#ff8800;
+  }
+  
+  #footer .brand {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 2.2rem;
+    color: #faf7f4;
+  }
+  
+  #footer .brand h1{
+    font-size: 2.2rem;
+    color: #faf7f4;
+  }
+  
+  #footer .brand h2{
+    font-size: 2.2rem;
+    color: #ff8800;
+  }
+
+  
+  #footer .footer-links {
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    margin: 1rem 0;
+  }
+  
+  #footer .footer-links h3 {
+    font-size: 2.2rem;
+    color:#ff8800;
+  }
+  
+  #footer .footer-links a {
+    color: #fff;
+    font-size: 1.7rem;
+  }
+  
+  #footer .letter h2 {
+    font-size: 2rem;
+    margin: 2rem 0;
+    color: #fff;
+  }
+  
+  #footer .letter input[type="text"] {
+    border: .2rem solid #fff;
+    outline: none;
+    background: none;
+    height: 4rem;
+    width: 22rem;
+    padding: 0 1rem;
+    font-size: 1.3rem;
+    color: #fff;
+  }
+  
+  #footer .letter input[type="submit"] {
+    outline: none;
+    border: none;
+    border-radius: 5rem;
+    color: #333;
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    letter-spacing: .2rem;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    height: 4rem;
+    width: 12rem;
+    margin: 1rem 0;
+  }
+  
+  #footer .letter input[type="submit"]::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background:#ff8800;
+    height: 100%;
+    width: 0%;
+    -webkit-transition: .2s;
+    transition: .2s;
+    z-index: -1;
+  }
+  
+  #footer .letter input[type="submit"]:hover::before {
+    width: 100%;
+  }
+  
+  #footer .letter input[type="submit"]:hover {
+    color: #333;
+    background:#ff8800;
+  }
+  
+
+
+
+   
+  
